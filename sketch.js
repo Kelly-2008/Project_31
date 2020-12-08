@@ -10,10 +10,12 @@ var divisions =[];
 
 var divisionHeight = 300;
 
+engine = Engine.create();
+world = engine.world;
+
 function setup() {
   createCanvas(800, 800);
-  engine = Engine.create();
-  world = engine.world;
+
   ground = new Ground(width/2,height,width,20);
 
    for (var k = 0; k <=width; k = k + 80) {
